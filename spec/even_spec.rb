@@ -3,13 +3,13 @@ require './even'
 
 describe Even do 
 	it "should return even " do 
-		obj=Prime.new
-		message=obj.find_primeno(6)
+		obj=Even.new
+		message=obj.find_even(6)
 		expect(message).to eq "even"
 	end
 	it "should return not even" do
-		obj=Prime.new
-		message=obj.find_primeno(11)
+		obj=Even.new
+		message=obj.find_even(11)
 		expect(message).to eq "Not even"
 	end
 end
